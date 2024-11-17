@@ -1,11 +1,13 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
+import TestApi from "./TestApi";
+
 function App() {
   return (
-    <>
-      <h1>React SBA</h1>
-    </>
+    <div>
+      <TestApi />
+    </div>
   );
 }
 
