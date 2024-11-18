@@ -11,7 +11,7 @@ const QuizPage = () => {
   const [correctAnswer, setCorrectAnswer] = useState("");
   const [feedback, setFeedback] = useState("");
   const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(5); // Session timer
+  const [timeLeft, setTimeLeft] = useState(20); // Session timer
   const [isGameOver, setIsGameOver] = useState(false);
 
   // Fetch a new question
@@ -82,7 +82,7 @@ const QuizPage = () => {
   // Handle Play Again
   const handlePlayAgain = () => {
     setScore(0);
-    setTimeLeft(5);
+    setTimeLeft(20);
     setIsGameOver(false);
     fetchQuestion();
   };

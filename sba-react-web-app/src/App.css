@@ -230,7 +230,7 @@ h1 {
   height: 100vh;
   background-color: #f9f9f9; /* Light background for contrast */
   color: #333; /* Dark text for readability */
-  font-family: Arial, sans-serif;
+  /*font-family: Arial, sans-serif;*/
   text-align: center;
   padding: 20px;
 }
@@ -268,8 +268,8 @@ h1 {
 /* Note styling */
 .scoreboard-note {
   margin-top: 20px;
-  font-size: 0.9rem;
-  color: #777; /* Subtle gray color */
+  font-size: 1rem;
+  color: #4d4949; /* Subtle gray color */
 }
 
 
