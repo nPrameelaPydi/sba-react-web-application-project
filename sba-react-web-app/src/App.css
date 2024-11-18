@@ -68,46 +68,61 @@ h1 {
   object-fit: cover;
 }
 
-
 /* HomePage container */
 .homepage {
   max-width: 1000px;
-  margin: 40px auto; /* Center horizontally */
+  margin: 40px auto; 
   padding: 20px;
-  text-align: center; /* Center-align text */
-  background-color: #f4f4f9; /* Matches carousel background */
+  text-align: center; 
+  background-color: #f4f4f9; 
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow with carousel */
-  border: 1px solid #ddd; /* Matches carousel border */
-}
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border: 1px solid #ddd; }
 
 /* Header in HomePage */
 .homepage h1 {
   font-size: 36px;
-  color: #444; /* Matches app header color */
+  color: #444; 
   margin-bottom: 20px;
 }
 
 /* Description text in HomePage */
 .homepage p {
   font-size: 18px;
-  color: #666; /* Consistent text color with app */
+  color: #666;
   line-height: 1.6;
   margin-bottom: 30px;
 }
 
 /* Button in HomePage */
 .homepage button {
-  background-color: #007bff; /* Same button color as before */
+  background-color: #007bff; 
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-  border-radius: 5px; /* Matches navbar hover effect */
+  border-radius: 5px; 
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .homepage button:hover {
-  background-color: #0056b3; /* Slightly darker blue for hover */
+  background-color: #0056b3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
