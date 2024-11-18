@@ -111,6 +111,119 @@ h1 {
 }
 
 
+/* Quiz Page Container */
+.quiz-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+/* Question Header */
+.quiz-container h2 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Options Buttons */
+.quiz-container button {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #7c7f81;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-container button:hover {
+  background-color: #3e4042;
+  transform: scale(1.02);
+}
+
+/* Feedback Section */
+.quiz-container div {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #444;
+}
+
+/* Timer Styling */
+.timer {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ff0000; /* Highlight timer in red */
+  font-weight: bold;
+}
+
+
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.quiz-container h2 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.quiz-option {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-option:hover {
+  background-color: #0056b3;
+}
+
+.quiz-feedback {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.quiz-score {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.quiz-timer {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #dc3545; /* Red for urgency */
+}
+
+
+
+
+
 
 
 
