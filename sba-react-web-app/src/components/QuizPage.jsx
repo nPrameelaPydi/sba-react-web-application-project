@@ -95,20 +95,20 @@ const QuizPage = () => {
   if (isGameOver) {
     return (
       <div className="quiz-container" style={{ marginTop: "3rem" }}>
-        {/*<h2>Time's up!</h2>
+        <h2>Time's up!</h2>
         <p>Your score: {score}</p>
-        <button onClick={handlePlayAgain}>Play Again</button>*/}
-        <h2>Your score: {score}</h2>
-        <Scoreboard score={score} onPlayAgain={handlePlayAgain} />
+        <button onClick={handlePlayAgain}>Play Again</button>
+        {/*<h2>Your score: {score}</h2>*/}
+        {/*<Scoreboard score={score} onPlayAgain={handlePlayAgain} />*/}
+        <p style={{ fontStyle: "italic", color: "green", marginTop: "40px" }}>
+          "Thanks for joining the fun! Come back and play anytime!"
+        </p>
       </div>
     );
   }
 
   return (
-    <div
-      className="quiz-container"
-      style={{ marginTop: "3rem", paddingBottom: "5rem" }}
-    >
+    <div className="quiz-container" style={{ marginTop: "3rem" }}>
       <h2>{question}</h2>
       {questionImage && (
         <img

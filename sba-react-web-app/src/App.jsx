@@ -4,6 +4,7 @@ import HomePage from "./components/HomePage.jsx";
 import QuizPage from "./components/QuizPage.jsx";
 import Scoreboard from "./components/Scoreboard.jsx";
 import Nav from "./components/Nav.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/quiz" element={<QuizPage />} />
         <Route path="/scoreboard" element={<Scoreboard />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

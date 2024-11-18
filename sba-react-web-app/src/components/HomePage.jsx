@@ -12,7 +12,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="homepage">
+      <div className="homepage" style={{ marginBottom: "5rem" }}>
         <h1>TriviaVerse</h1>
         <p>
           Welcome to the ultimate trivia experience! Test your knowledge of Rick

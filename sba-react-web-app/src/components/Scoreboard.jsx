@@ -6,7 +6,9 @@ export default function Scoreboard({ score, onPlayAgain }) {
       <button className="scoreboard-button" onClick={onPlayAgain}>
         Play Again
       </button>
-      <p className="scoreboard-note">More implementation coming soon...</p>
+      <p className="scoreboard-note" style={{ fontStyle: "italic" }}>
+        More implementation coming soon...
+      </p>
     </div>
   );
 }
