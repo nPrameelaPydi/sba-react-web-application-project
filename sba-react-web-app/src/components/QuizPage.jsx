@@ -11,7 +11,8 @@ const QuizPage = () => {
   const [correctAnswer, setCorrectAnswer] = useState("");
   const [feedback, setFeedback] = useState("");
   const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(30); // Adjust timer duration as needed
+  const [timeLeft, setTimeLeft] = useState(30); // Session timer
+  const [isGameOver, setIsGameOver] = useState(false);
 
   // Fetch a new question
   const fetchQuestion = async () => {
@@ -23,9 +24,9 @@ const QuizPage = () => {
 
       // Generate options
       const shuffledOptions = [...data.results]
-        .filter((char) => char.name !== randomCharacter.name) // Avoid duplicate answers
-        .sort(() => 0.5 - Math.random())
-        .slice(0, 3)
+        .filter((char) => char.name !== randomCharacter.name) // removing correct answer from answers
+        .sort(() => 0.5 - Math.random()) //make sure distracted answers shuffled
+        .slice(0, 3) //grab the first three distractors
         .map((char) => char.name);
 
       // Ensure the correct answer is included
@@ -37,7 +38,7 @@ const QuizPage = () => {
       setOptions(shuffledOptions.sort(() => 0.5 - Math.random())); // Shuffle options
       setCorrectAnswer(randomCharacter.name);
 
-      // Set the question dynamically
+      // Set the question
       setQuestion(`Who is this Character?`);
       setQuestionImage(randomCharacter.image);
     } catch (error) {
@@ -55,30 +56,51 @@ const QuizPage = () => {
       setFeedback(`Wrong! The correct answer was ${correctAnswer}.`);
     }
 
-    // Reset feedback and fetch a new question after a delay
+    // Move to the next question after a delay
     setTimeout(() => {
       setFeedback("");
       fetchQuestion();
-      setTimeLeft(30); // Reset timer
     }, 1500);
   };
 
-  // Handle timer running out
+  // Handle timer
   useEffect(() => {
-    if (timeLeft === 0) {
-      setFeedback(`Time's up! The correct answer was ${correctAnswer}.`);
-      setTimeout(() => {
-        setFeedback("");
-        fetchQuestion();
-        setTimeLeft(30); // Reset timer
-      }, 1500);
-    }
-  }, [timeLeft]);
+    const timer = setInterval(() => {
+      setTimeLeft((prevTime) => {
+        if (prevTime <= 1) {
+          clearInterval(timer);
+          setIsGameOver(true); // End the session
+          return 0;
+        }
+        return prevTime - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [isGameOver]);
+
+  // Handle Play Again
+  const handlePlayAgain = () => {
+    setScore(0);
+    setTimeLeft(30);
+    setIsGameOver(false);
+    fetchQuestion();
+  };
 
   // Initial fetch
   useEffect(() => {
     fetchQuestion();
   }, []);
+
+  if (isGameOver) {
+    return (
+      <div className="quiz-container">
+        <h2>Time's up!</h2>
+        <p>Your score: {score}</p>
+        <button onClick={handlePlayAgain}>Play Again</button>
+      </div>
+    );
+  }
 
   return (
     <div className="quiz-container">
