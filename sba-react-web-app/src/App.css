@@ -220,12 +220,13 @@ h1 {
   color: #dc3545; /* Red for urgency */
 }
 
+
 /* General styles for the scoreboard container */
 .scoreboard-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   height: 100vh;
   background-color: #f9f9f9; /* Light background for contrast */
   color: #333; /* Dark text for readability */

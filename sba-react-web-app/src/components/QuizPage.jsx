@@ -11,7 +11,7 @@ const QuizPage = () => {
   const [correctAnswer, setCorrectAnswer] = useState("");
   const [feedback, setFeedback] = useState("");
   const [score, setScore] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(30); // Session timer
+  const [timeLeft, setTimeLeft] = useState(5); // Session timer
   const [isGameOver, setIsGameOver] = useState(false);
 
   // Fetch a new question
@@ -82,7 +82,7 @@ const QuizPage = () => {
   // Handle Play Again
   const handlePlayAgain = () => {
     setScore(0);
-    setTimeLeft(30);
+    setTimeLeft(5);
     setIsGameOver(false);
     fetchQuestion();
   };
@@ -98,7 +98,7 @@ const QuizPage = () => {
         {/*<h2>Time's up!</h2>
         <p>Your score: {score}</p>
         <button onClick={handlePlayAgain}>Play Again</button>*/}
-
+        <h2>Your score: {score}</h2>
         <Scoreboard score={score} onPlayAgain={handlePlayAgain} />
       </div>
     );
