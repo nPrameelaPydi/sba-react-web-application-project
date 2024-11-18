@@ -1,7 +1,7 @@
 // /components/QuizPage.js
 
 import React, { useEffect, useState } from "react";
-import { fetchTriviaData } from "../utils/api";
+import Scoreboard from "./Scoreboard.jsx";
 import Timer from "./Timer";
 
 const QuizPage = () => {
@@ -95,9 +95,11 @@ const QuizPage = () => {
   if (isGameOver) {
     return (
       <div className="quiz-container">
-        <h2>Time's up!</h2>
+        {/*<h2>Time's up!</h2>
         <p>Your score: {score}</p>
-        <button onClick={handlePlayAgain}>Play Again</button>
+        <button onClick={handlePlayAgain}>Play Again</button>*/}
+
+        <Scoreboard score={score} onPlayAgain={handlePlayAgain} />
       </div>
     );
   }
