@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="homepage">
       <h1>TriviaVerse</h1>
       <p>
         Welcome to the ultimate trivia experience! Test your knowledge of Rick

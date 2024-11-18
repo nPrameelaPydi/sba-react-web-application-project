@@ -35,7 +35,7 @@ h1 {
 }
 
 .navbar li {
-  margin: 0 20px; /* Space between menu items */
+  margin: 0 50px; /* Space between menu items */
 }
 
 .navbar a {
@@ -66,4 +66,48 @@ h1 {
 .carousel-item img {
   max-height: 400px;
   object-fit: cover;
+}
+
+
+/* HomePage container */
+.homepage {
+  max-width: 1000px;
+  margin: 40px auto; /* Center horizontally */
+  padding: 20px;
+  text-align: center; /* Center-align text */
+  background-color: #f4f4f9; /* Matches carousel background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent shadow with carousel */
+  border: 1px solid #ddd; /* Matches carousel border */
+}
+
+/* Header in HomePage */
+.homepage h1 {
+  font-size: 36px;
+  color: #444; /* Matches app header color */
+  margin-bottom: 20px;
+}
+
+/* Description text in HomePage */
+.homepage p {
+  font-size: 18px;
+  color: #666; /* Consistent text color with app */
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Button in HomePage */
+.homepage button {
+  background-color: #007bff; /* Same button color as before */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px; /* Matches navbar hover effect */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.homepage button:hover {
+  background-color: #0056b3; /* Slightly darker blue for hover */
 }
