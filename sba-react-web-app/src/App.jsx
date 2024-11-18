@@ -10,20 +10,18 @@ import TestApi from "./TestApi";
 
 function App() {
   return (
-    //<div>
-    //  <TestApi />
-    //</div>
-
     <div>
-      <Nav></Nav>
+      <Nav />
       <div>
         <h1>Welcome to TriviaVerse</h1>
-        <CarouselComponent />
+        <div className="carousel-container">
+          <CarouselComponent />
+        </div>
       </div>
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-        <Route path="/quiz" element={<QuizPage />}></Route>
-        <Route path="/scoreboard" element={<Scoreboard />}></Route>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/quiz" element={<QuizPage />} />
+        <Route path="/scoreboard" element={<Scoreboard />} />
       </Routes>
     </div>
   );

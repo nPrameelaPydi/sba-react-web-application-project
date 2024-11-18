@@ -1,21 +1,41 @@
+/* General styles for App */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #444;
+}
+
+/* Navbar styles (already defined, included here for reference) */
 .navbar {
   position: sticky;
   top: 0;
   background-color: #333;
   padding: 10px 0;
   z-index: 1000;
+  display: flex; 
+  justify-content: center; 
 }
 
 .navbar ul {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 100%; 
 }
 
 .navbar li {
-  margin: 0 20px;
+  margin: 0 20px; /* Space between menu items */
 }
 
 .navbar a {
@@ -29,4 +49,21 @@
 
 .navbar a:hover {
   background-color: #555;
+}
+
+/* Container for Carousel */
+.carousel-container {
+  margin: 20px auto;
+  max-width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Carousel Item Image Styling */
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
 }
