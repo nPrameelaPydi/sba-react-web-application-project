@@ -21,8 +21,8 @@ export default function CarouselComponent() {
           }}
         />
         <Carousel.Caption>
-          <h3>First Slide</h3>
-          <p>Description for the first slide</p>
+          {/*<h3>First Slide</h3>
+          <p>Description for the first slide</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -39,8 +39,8 @@ export default function CarouselComponent() {
           }}
         />
         <Carousel.Caption>
-          <h3>Second Slide</h3>
-          <p>Description for the second slide</p>
+          {/*<h3>Second Slide</h3>
+          <p>Description for the second slide</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
 
@@ -57,8 +57,8 @@ export default function CarouselComponent() {
           }}
         />
         <Carousel.Caption>
-          <h3>Third Slide</h3>
-          <p>Description for the third slide</p>
+          {/*<h3>Third Slide</h3>
+          <p>Description for the third slide</p>*/}
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
