@@ -27,7 +27,7 @@ A fun trivia game app that uses the Rick and Morty API or any API with engaging 
 
 ## Live Site
 
-[Visit the live version of the Trivia Quiz Application here](https://your-live-site-link.com).
+[Visit the live version of the Trivia Quiz Application here](https://gregarious-naiad-9d9f4f.netlify.app/).
 
 ## Usage Instructions
 
