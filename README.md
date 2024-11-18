@@ -2,6 +2,10 @@
 
 A fun trivia game app that uses the Rick and Morty API or any API with engaging content. The app generates random trivia questions based on characters, episodes, or locations, and tracks user performance.
 
+## Netlify Live site link:
+
+[https://gregarious-naiad-9d9f4f.netlify.app/](https://gregarious-naiad-9d9f4f.netlify.app/).
+
 ## Technologies Used
 
 - **React**: The frontend library used to build the user interface, handle component rendering, and manage state.
