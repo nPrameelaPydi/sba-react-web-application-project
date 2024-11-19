@@ -299,9 +299,6 @@ html, body {
   padding: 0;
 }
 
-
-
-
 /* Update quiz container */
 .quiz-container {
   margin: 40px auto;
@@ -316,11 +313,12 @@ html, body {
   /* Remove fixed height */
 }
 
-.footerdiv {
-  
+.footerdiv {  
   display: flex;
   justify-content: end;
 }
+
+
 
 
 
