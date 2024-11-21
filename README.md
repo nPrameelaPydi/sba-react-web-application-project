@@ -2,7 +2,7 @@
 
 # TriviaVerse
 
-A fun trivia game app that uses the Rick and Morty API or any API with engaging content. The app generates random trivia questions based on characters, episodes, or locations, and tracks user performance.
+A fun trivia game app that uses the Rick and Morty API with engaging content. The app generates random trivia questions based on characters, episodes, or locations, and tracks user performance.
 
 ## Technologies Used
 
